@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #222;
+    height: 100vh;
+    user-select: none;
+}
+.srt {
+    color: #f00;
+    font-size: 48px;
+    animation: srt 2s linear infinite;
+    position: absolute;
+    translate: -50%;
+    scale: 0.1;
+}
+@keyframes srt {
+    0% {
+        translate: -70%;
+        
+    }
+    10% {
+        translate: 30%;
+
+    }
+    20% {
+        translate: -60%;
+    }
+    30% {
+        translate: 40%;
+    }
+    40% {
+        translate: -60%;
+    }
+    50% {
+        translate: 40%;
+    }
+    60% {
+        translate: -60%;
+        scale: 1;
+    }
+    70% {
+        translate: 40%;
+    }
+    80% {
+        translate: -60%;
+    }
+    90% {
+        translate: 40%;
+    }
+    100% {
+        opacity: 0;
+        
+        transform: translateX(-50%) translateY(-100vh);
+    }
+}
